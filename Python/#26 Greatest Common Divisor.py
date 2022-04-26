@@ -1,16 +1,17 @@
+
+from re import A
+
+
 def gcd(a,b):
     while True:
-        c = b%a
-        if c == 0:
+        b = b%a
+        if b == 0:
             return a
             break
-        d = a%c
-        if d == a or d == 0:
-            return 1
+        a = a%b
+        if a == 0:
+            return b
             break
-        elif 
-            return d
-        
 def lcm(a,b):
     d= int((a*b)/gcd(a,b))
     return d
